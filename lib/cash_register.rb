@@ -7,8 +7,8 @@ self.purchases = []
 self.discount = discount if discount != nil
 end
 
-def add_item(title, price, quantity=1)
-  self.transaction = [name, price, quantity]
+def add_item(name, price, quantity=1)
+    self.transaction = [name, price, quantity]
     quantity.times do
       self.purchases.push self.transaction[0]
       self.total += self.transaction[1]
