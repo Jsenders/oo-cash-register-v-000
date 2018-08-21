@@ -12,8 +12,8 @@ def add_item(title, price, quantity = 1)
     quantity.times do
       self.purchases.push self.transaction[0]
       self.total += self.transaction[1]
-    end 
-  end 
+    end
+  end
 
   def items
     return self.purchases
